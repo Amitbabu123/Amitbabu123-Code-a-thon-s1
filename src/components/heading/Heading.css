@@ -1,0 +1,104 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container h1 {
+    color: white;
+    font-size: 40px;
+}
+
+.container h1 span {
+    color: rgb(158, 34, 158);
+    font-size: 40px;
+}
+
+.input {
+    margin-top: 10px;
+}
+
+.input input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid blue;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box; 
+}
+
+.input input:focus {
+    border-color: white;
+}
+
+.container button {
+    background-color: white;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 2px solid blue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: lightblue;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background:
+      linear-gradient(rgb(30, 122, 158), transparent),
+      linear-gradient(to top left, blue, transparent),
+      linear-gradient(to top right, rgba(75, 25, 128, 0.842), transparent),
+      linear-gradient(to bottom left, rgb(190, 16, 16), transparent); 
+    background-blend-mode: screen;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-content {
+    font-size: 1.5rem;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .container h1 {
+        font-size: 30px;
+    }
+
+    .container h1 span {
+        font-size: 30px;
+    }
+
+    .input input {
+        font-size: 0.9rem;
+    }
+
+    .container button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .card {
+        width: 80px;
+        height: 80px;
+        font-size: 1.2rem;
+    }
+}
